@@ -10,6 +10,12 @@
   .div1 { 
       grid-area: 1 / 1 / 6 / 2;
   }
-  .div2 { grid-area: 1 / 2 / 6 / 6; }
+  .div2 { 
+    grid-area: 1 / 2 / 6 / 6;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color:  #9198e59c;
+    background: linear-gradient(#e66465 #ffffff);
+  }
 
 

@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.bold{
+.titre{
   font-weight: bold;
+  font-size: x-large;
 }

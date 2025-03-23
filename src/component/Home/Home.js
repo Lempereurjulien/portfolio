@@ -1,25 +1,20 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import "../Home/Home.css"
+import { TitleHome } from "../TitleHome/TitleHome";
+import { PresHome } from "../PresHome/PresHome";
 export function Home(){
-
-    const teste =() =>{
-        alert("work")
+    const [presHome, setPreshome] = useState(false);
+    
+    const changeAffichage = () =>{
+        setPreshome(!presHome);
     }
+    
+    const affichage = presHome ? <PresHome change={changeAffichage}></PresHome> : <TitleHome change={changeAffichage}></TitleHome>
+
     return (
         <div className="home-content">
-            <div className="title-content">
-                {/* <div className="home-title">
-                <div className="title">
-                Bienvenue sur le portfolio de Lempereur Julien
-                </div>
-                <div className="button" onClick={teste}>Qui je suis ?</div>
-                </div> */}
-                <div className="pres-title">
-                <div className="title">
-                Bienvenue sur le portfolio de Lempereur Julien
-                </div>
-                <div className="button" onClick={teste}>Qui je suis ?</div>
-                </div>
+            <div className="first-content">
+                {affichage}
             </div>
 
         </div>

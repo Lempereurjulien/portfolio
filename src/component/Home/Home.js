@@ -26,7 +26,6 @@ export function Home(){
             <div className="first-content">
                 {affichage}
             </div>
-
         </div>
     );
 }

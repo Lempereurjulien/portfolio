@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import './PresHome.css'
 
 export function PresHome(props){
+
     return (
         <div className='preshome-content'>
             <div className='title-content'>
